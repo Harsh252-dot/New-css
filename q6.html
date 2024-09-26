@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Header Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+        .login button {
+            padding: 8px 16px;
+            font-size: 16px;
+            background-color: transparent;
+            border: 2px solid #ff0000;
+            color: #ff0000;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login button:hover {
+            background-color: #ff0000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <!-- Placeholder image link -->
+            <img src="data:image/jpeg;base64,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" alt="Masai Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="#">Courses</a>
+            <a href="#">Fees & ISA</a>
+            <a href="#">About Us</a>
+            <a href="#">Hire From Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Events</a>
+            <a href="#">News & Blogs</a>
+        </nav>
+        <div class="login">
+            <button>Login</button>
+        </div>
+    </header>
+</body>
+</html>
