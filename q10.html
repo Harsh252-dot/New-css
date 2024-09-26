@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0b2a97; /* Newton School blue */
+            padding: 15px;
+        }
+
+        /* Navbar Left Section - Logo and Links */
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-left img {
+            width: 120px;
+            height: auto;
+            margin-right: 20px; /* Space between logo and links */
+        }
+
+        .navbar-links a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .navbar-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navbar Right Section - Sign Up Button */
+        .navbar-right .sign-up-btn {
+            background-color: #ffc107; /* Button color */
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .navbar-right .sign-up-btn:hover {
+            background-color: #e0a800; /* Hover effect for button */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Structure -->
+    <div class="navbar">
+        <!-- Left section with logo and links -->
+        <div class="navbar-left">
+            <img src="data:image/jpeg;base64,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" alt="Newton School Logo">
+            <div class="navbar-links">
+                <a href="#">Data Science & AI</a>
+                <a href="#">Tech in CS & AI</a>
+                <a href="#">Newton Edge</a>
+                <a href="#">Refer & Earn</a>
+                <a href="#">More</a>
+            </div>
+        </div>
+
+        <!-- Right section with sign-up button -->
+        <div class="navbar-right">
+            <button class="sign-up-btn">Sign Up</button>
+        </div>
+    </div>
+
+</body>
+</html>
