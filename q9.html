@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai In The News</title>
+    <style>
+        /* Style for the container holding the news articles */
+        .news-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+            gap: 20px; /* Space between columns */
+            margin: 20px;
+        }
+
+        /* Individual news articles */
+        .news-item {
+            background-color: #f8f8f8; /* Light background */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-item h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .news-item p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Style for the investor section */
+        .investors-section {
+            display: flex;
+            justify-content: space-around; /* Distribute the logos evenly */
+            margin-top: 40px;
+        }
+
+        .investor-logo img {
+            width: 100px; /* Adjust logo size */
+            height: auto;
+        }
+
+        /* Basic body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Masai In The News</h2>
+
+    <!-- News Articles Section -->
+    <div class="news-container">
+        <div class="news-item">
+            <h3>The Economic Times</h3>
+            <p>31 Dec 2021</p>
+            <p>Edtech startup Masai School acquires data analytics firm Prepleaf for $1 million.</p>
+        </div>
+        <div class="news-item">
+            <h3>MoneyControl</h3>
+            <p>31 Dec 2021</p>
+            <p>Kunal Shah, Vijay Shekhar Sharma, Amit Ranjan among 21 angel investors in Masai School.</p>
+        </div>
+        <div class="news-item">
+            <h3>VCCircle</h3>
+            <p>18 Aug 2020</p>
+            <p>Unitus Ventures leads pre-Series A funding for coding focused Masai School.</p>
+        </div>
+    </div>
+
+    <!-- Investors Section -->
+    <div class="investors-section">
+        <div class="investor-logo">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALcAwgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABwgEBQYBAwL/xABEEAABAwMBBQMHCAkCBwAAAAABAAIDBAURBgcSITFBE1FxIjdhgZGxsggUFSNyc3TBMjQ1NlJidaGzFvAkJkWCkqLR/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECBAUD/8QAKxEBAAIBAwIDBwUAAAAAAAAAAAECEQMhMQQSQVFhInGRocHR8AUTgbGy/9oADAMBAAIRAxEAPwCbEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQF6sevldBQVM0eN+OJ7257wCQoC2Kaovtw1783r7rVVUNVDK6WOaUvbvAbwIB5ce7ogsIse4V1LbaOSrrpmwwRjLnu6f/T6FkLQa4sU2oLC6jpZAydkjZWBxw1xGRg+324VbzMVma8vfpqad9atdWcVmd59GTY9SWq/GRtsqu0fHxcxzS1wHfg9F+7nf7Za52wVlRuykZ3WsLiB3nA4Lj9nejblZbpLcLnuRYiMbImvDi7JHE44Y4LM1Ppe4Vl3lq6IMljnwSC8NLCAB16cFltq68aXdFfadPV6ToK9ZOnXUzTHOY58s8fmHZxzxS07aiORroXN3g8HgR3r4U1ypKmXsoZcv6AgjPgsa32p1Jp9ltdKHPDCC/pkkn2ZKxLbaKmKtZLOGsZGc5Ds58FXV1uorekVptPPowRpaOL+1xx6t+iItzIIiICIiCNtmO1CTWl3qrbV21lLLHCZ4nxPLgWhwBBz18ocfFSSq5fJ2/fmq/p0nxxqxqAop0rtfdftassjrU2GkqJHxwTCQl4IBILhy446cs9VKx5FVV2XedC0/in/AAuQWqUVan2wixa0ksv0W2Sjp5WxT1DpcP443iBjGBnrzx0Uqqpu1XziX38SfcEErar242631MlLp6i+kXMO6amR+5ET/KBxcPTw9a5um293lsuaqzUEsf8ADG97D7ST7l32hNldjsVsgku1FDcLo9odM+oaHsjd/Cxp4cO/mf7LfXvQWl71Svgq7NSRlwwJqeIRSM9Ic0e/IQY2hdoNm1nG9lEX09dG3ekpJsbwHe08nD3dQMhdaqmXejr9nGvdynlLpqCZssEvLtYyMjPi0kEeIVraKqjraKnq4TmKeJsrPBwyPeg4/ahrt2h6Cjkgom1dRVyOa0PeWtaGgZJxz5jgtxobUjdWaZpbwKc07pS5r4t7eDXNJBweoUZ/KU/VbD9uf3MXVbCfNzR/fzfGUGPrvarZtP19dYZKSsqKlsO5I+MNDGue3IHE8eBChDZzqWn0nqmG7VcEs8Ucb2FkWN47zcdVYvV2h9NXptZc7laopa0QOPbB72ElreBO6RnGBz7lAGySy26/61p7fd6YVFK6GVzoy9zckNJHFpBQTdovarZ9W3kWqmo6ymqHxufGZt0tdu8SMg8Djj6l02rr4zTWm6+8SQmYUse8Iwcb7iQ0DPQZIWNp/RGm9OVbquzWqOnqHN3O033vcB1A3icepazbH5tb19iP/KxBibLdob9b/P4aqhZS1FJuu+reXNe12R15EY/uu+UD/Js/ad8+4i+IqeEHzqp2U1NNUSZ3ImOe7HPAGSoy2e7WZNW6nNoqLXHSslY98D2SlxG6M4dkd2eIxy5KRL5+xLh+Fl+AqtuwvzkUH3U3+NyCz64LXm1Sz6SqHUEcT7hcmjL4I3BrYu7fdxwfQAfUu949OaqTpplFX7QYG6vfuU81Y81pkdujfO8cOPQF+AfRlB20m3u9GXMdmt7Y/wCFznk+3P5Lp9K7cLVcallLfqN1se84bUNf2kWf5uALf7jvwpDp9OafjpWxU9mtgpyOAbTMLSPZxXCax2LWi81DaqxTMtEpP1sbYt6J3pDcjdPhw9CCUWEPaHsIc1wyHDiCEXJ2zQ8dDbaSj+mrm75vCyLLJN0HdaBwHHA4ckQQ98nc/wDPNT/TpPjjVjVU3S12rNnmuRLW07y+kkfT1cI4FzDwOM+pw78BWbsup7HfKVtTbLpSzMcMlvaAPb6HNPEHxQbc8iqq7LvOhafxT/hcpz17tHs2mrZUNp6yCqujmFsFPC8P3XEcHPxyA595UEbJSTtHsZJyTOcn/scgtcqpbSvOfdvxo/JWtVUtpXnPu340fkgtceZXi9PMrxBXD5Q4A11AQOdvjJ/83qctAknQ+nyeJ+joPgCg75RH78039Oj+ORThoH9xtP8A9Og+AIIz+Up+q2H7c/uYuq2E+bmj+/m+MrlflKfqth+3P7mLqthPm5o/v5vjKDtrt+yq38PJ8JVbdg/nFpPuJvgKsxVQ/OKWaAnHaxuZnuyMKqehbt/ojX0E92jc1lLLJT1TQMlgILSR4Hj6kFsFxu2IE7Nr3j+CP/Kxbu26q0/dZ44Lde7fUzyDLIo6hpeeGf0c5X61ZaTfdNXO1tID6qnexhPIPx5J9uEEN/JsI+lL4OvzeL4ip5VVdm2p3aF1e6S4wyNgcHUtbGB5TOPPHe0jl4qzFt1BZrrTNqLddKOoiIzlkzcjxHMetB9b5+xLh+Fl+AqtuwvzkUH3U3+NylbaltHtNosVZbbZWRVd0qonQtbA8PEAcMFziOAIB4DnnHRRTsL85FB91N/jcgs+ou2h7H6TUVZNdbJUMobhMS6WKRv1MzuruHFpPU4OeeM5KkS+XOKzWetudQx74qSB0zmM5uDRnAUZ6R22226176W/0rLU1x+pnEhezwecDHjy8EHBjSW0/SO8ba24tp4zkfMKntGO9PZg5PratnpvbVfbVVCl1VS/PImO3ZHCMRTs9XAHwIHip4gudvqIBPBX0skJGRIyZpbjxyoE2/3awXO6W9tqlgqK+Fr21U8BDhu8N1pcOZHleCCdKS/WispYaqC40ximjbIwmQAlpGRwPJeqp1NprUk9PFNT26tfDIwOjc0HBaRkEepeoLE7Qdmtq1niqL3UVzY3dbUxtyHjoHt6+PAqKanYXqiOYtgqrZNHnyX9q5px6QWqxoIIyDkICDy4oIX0nsLjp6iOp1RXR1IYc/NKXIY77Tzg49AA8Vk6Q2QVtg1zFeJLhSvt1LK+SBjA7tX5BADhjDcZ6E8vTwl1sjHkhj2uI5gHOF+iQOZHLKGBQ9qrZBX3vXkl4huFMy21MzZZg7e7VmMbwaMYPLgcjn6OMwMeyQbzHNcO9pytdJdgzUUNn7AkyUrqjtd7lh2MY/NRMxHK9NO15mKxxGfg2Z5rxMgEDIyeSEgYyQM8B6VKiLdq2zG4axvdJc7XW00RbAIJmVBcMAOJDm4Bz+keHDkpFsdubaLLQWxkhkbR08cAeRgu3WgZ/ss0uAOCQDjPNeMe2QZY5rh3tOUMOF2s6FqtbW6ibbqqGGqpJHFonyGPa7GeIBIPAdFudn+m5NJ6VpLRNUNnmjL3ySMGG7znE4Geg5LoWvY5xa17S4cwDxCOc1rS5xDWjmScBDD1R3tF2VUOrao3KiqBQXMgCR+5vRzY5bw5g9Mj2KRGkOAc0gg8iCiCDdI7Fb3a9S0FwuVyoW09JOyf/hnvc95a4EDi0AZxzypyREEfbQdlVs1bUOuFNObfcyMPlazeZN9tvf0yPXlRlLsM1W2UtZUWt7M8H9u8cPDcVjkQQ7pTYZSUju31LWirk3SG09OCI2nHMuPF2O7A9ayNm+yi4aU1W67XC4Us0MDHsp2wb28/eBGXAjyeB5AnipaRB+ZI2SxujlY18bwWuY4ZDgeYI6hRLqnYbbK+d9Tp+tdbnOOTTyN7SLP8pzlo9qlxEFcZNhmq2vw2ptTx/EJ3j3sXTaU2FR09THUanr46hrDn5pS5DXehzzg49AA8VNCIPImNhiZFE1rI2NDWsaMBoHIAIvUQcPRXb/SlvvFqqMvfb/rKAO4mWOQ+QO84ccFfG609ZYtI22gDpnVNwrWNrXxPDZHGTLngOPAE/o5XUXTT1DdLrQXKpa7tqIksAxh/Ub3DoeI9azLpbqW60UlHXR78L/TggjkQehCz/tWxMfxH58nZjr9GL0vjeZi1/fG23zt75x4OGltU1PLST6f0vW26sglb9b27N17M+U1/lHIIWx1JboLrri1UlXvmnNHK57GvLd8A8jjpy9i2lLpuSKogkqb3dKqOncHRxSTADI5bxaAXetZ81qhlvVPdXPeJoIXRNaMbpDupURpbYx4x5fRa/wCoRGpFotmYraImO7OZjbe0zP2y5qW202nNYWb6HYaeC49rFUwNcSx260FpweR4/wC+K+Fz09a6vaFHFPTucyoonzygTPG8/fxnIPDwHBdZX2mGuuVur5XyNkoHPdG1pGHbwwc+xY980/Dd5qepFTU0dXTgiOopn7rt08we8KbaW0xjxyrpfqGLVtN5i00mszvnOZx6ziMfkNZqDhrnS3QYqR/6L6awOLnpsZ/6k33FbK9WKmvNJBDUSzxy07g+GpifuyMcOoPp6rXx6RidX0ddXXSvrKmkkD43TPGAB0wB14ZPPglq23iI5mPp9ldHX0MadrWxNK2jGOc90x/ph6ht8F01va6Wr3zAaKUvja8tEgB5HHTlw9C91VTQ6f086Gx05pRWVUcUhpzuuAdwOCeAJAxn0roZbXDLeqe6ue8TQQuhawY3SHHOSvrcqCmudFLR1sQlglGHNPv9BUzpZi3nKleuittGJmZpWIzHhzM8eLgqy0TQwQy6f0rXUNxp3tdFP84Z5WCMh/l+UCMre6wtNXcKq31LaFtxpKcP7agM/Z7zjjDh0OOPP81k0+mHxywGa+XWeCncHRwPmABxyDiAC4LIvGn47lWRV0VbWUVZEzs2y08mMtznBacgqsaU9s7f00W6+s61J7+O7f2p58JmZ7vhxnbLX6N+i4qq4U9vpay3zt3XTUFQTux88OYMkYPeD3LqFqbLYorVPUVLqqprKypwJJ6hwLsDkBjgAtsvXTiYriXN63Upqa02pMzG3Pu9d8eWdxERejKIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIg//Z" alt="Unitus Ventures Logo">
+        </div>
+        <div class="investor-logo">
+            <img src="data:image/jpeg;base64,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" alt="Omidyar Network India Logo">
+        </div>
+        <div class="investor-logo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKkAAACUCAMAAADf7/luAAAAolBMVEX///+SlJWSlJeNj5KKjI/29vb1gh/8/Pzw8PD5+fm7ur2foaT0dgDP0NHT1Nb++vOzs7X3oVz+7tz+8ef0egD+9uz2lkT97OH1jTD3qXb5t4Hj4+T2mFf2nWf84dSrrK72nVPzbgDGx8j6xJ/83cb1ijn707b6yqj1hTL3oGP959b6xJn6y7H4tYj4sH31kEf2lWD71MD3p2v61K/1iRr4vYxJKrkWAAAIfElEQVR4nO2aC3eqOhOGIeEmILECohvdKCAoFtn1nP7/v/ZNLuCltrq6zimcb+Vdu7ZANjzOTCaTBEWRkpKSkpKSkpKSkpKSkpKSkpL6P5A1Tu1JOrb65nik1MGahumPk/bN8pViVcMqAqmqijXV65vnM5m2hpFKKdkHwlpi9s10V6NEE5hIoKpaMuqb6o70iXZpUPaDtIneN9cHWRSU4WGMEMacFGnJ0JKANcEMVMVqkqapnahYcE+GhdqCIuywTGrGKcI8XIeFCqCcVHNiccr0HMxIER5QAFCLItaBOlBQDKg8Ww3Gqjp1PUXV8BWShzAaFKqeMM9DP0c3QLHadrNBBMAoYb2cxugHnFgTqFrSf141E5FHb1zPFYsMgAYwWokh9KPrucCqrcV7rgEcMYTecT2XxQIAyivN+VmyGznUoiw9fdplIABaq/4k2Y1sjUchvsyjt+KxymqAnyO7kSdi9EtQNgTwvKqNf4rsRiYbhKAI+Rq0G63gG/XUqzw+sD8E5VZl4dzTfCXhufIxKLcqK1b+fao7Gjl8AHpqDpryKcv9pPtvK0bc9089PHZ4Vn3C/v+8PEaKnsuSOqsOEOolUMeiTHqqsckLLtxLnhqzJQj8rE0Rq2F7sWnMnv1pnPrlexmeGzt8nOolTi0+UUL3+37ZGIaxy9vDlE9fnut+/7gSvrZzN58W28CgqBU/ZKMU6iufKmP86ahPFgzUCF7YIUv8YNW+xiiFVh6s8vyAOl1yUmNNFAqqqaz3oR4gmVKtLZJvUaP9BWnstO36W6aEqYl616rkyEndI4DSVgx00g8lle509fwNat5Q1KCJmOtFId3nTMqiGNS1H1Df9jtjvs+F6wew6hd3c9Nb1KgoC59eF5Ps3hcneBTeQ2VXHbFOrQ1gwccSayj3UEWM0rXp/kE7q96ZT7WgQGr3voRC1QUAvi5A2tkTS1H2ILZRzqg366eo3ZyC4WkwqGJr54zKZ/mMladcu0/CTlaicUdjJKp6D/HFAPqLb6QMDRUiwPa81BHL1HQ5ckz3fFDvi32t2mRFNyFBoi/xdVNAHQ4omwKctyHFP5gPsuyUYs3pf1G6k97ulQjbsiFUXEsHsHp+IStpd8u4MOomI4PiBI2gI4ktNODETjqY0PyoOKXzeujryEnSIQz1X8jyxqltp2Nv4JxMI10fRD0iJSUlJSUlZBLyExWJaYG+eNCIXdbh85MGfvV6OJRFRJ56WlXBs0gePW74oYluq6r9RRUZJ3SNfozQ/ZVFkp+CwNgZ7vz94dNB4X7mK8rUfXnUMJovbr+6NdG0L0kd+rLBWLu/Rx9mhrHIiqKsl26TP44Bf8VIN+tvkWL8mDSGeu7ORfIeLAvOV9XBNr/T5FohIw3r8vukEK66Mopj61y26TEcCtJRF6cWO6vQ5opZGMszXeYuK4D3xRNM3+ffwc+LImcbVMSfLmcVNIjEftUULlVENCcKqXIewaFfzU9T/5pVkMYJlOoTx0lssRYyGsMR1O9jbtPJhNnUShN2Vk+Sia5E+11xvhOp3UxRXvdifyf8VdOnhuVqFwS7BW34tlrtjNWfguxr9hUOf3aG0bBLSrQq8kWz264OwHf4szK2q/21jwQpBCJK6HQdOx41BUziNDp/Vx22mSfiNE5UNqlHE0xfPiqC+vJrV7t9pBxccX9/1gCzXwfzw9trbRgZUYpmDWTbItysafN9sMxey0WwO8DR702z3R6zeuaeiHJoGmPerO+S0jdLNOTA1J2tIY8SDWHVcehbb5wUT9h6CWaN6ATf0cOjUVzeKqyNXDkELel6OaV2PlH3kuolyMD71WpWRYT1/WgZZNTjYWW4ELa/3WBREUL80+YA3s/ni+i+94EUO7Fu2Rhhj23jaEms63TnqyM14RNN4CzbNnd0f91UV/d6DYob0sJ4mQqDz+gOJVm1WYoc3FrkitzdUZsu+c2mxkz5qkdRm8bMvxiPTR2MyTc8ALUjtZw2TcSYkkaz5TVpEZTXpGDSzoP5BsjCjjSaL7sE/LIpwaYt+NYIH5HSQ93GODU9hDTe1830bFNL65ZJE0xt2gApCcPulq/uNWlUNWerR39DFF+QBseQcCl/bU5AmomG6+ABKd+EHaWUdIwwFtc9pLWkMcbtG+VjjZK+7H6dDBii1n+xk6S+8X6Ub/ed4ZgHzqR5AP+zlbv+Pql6j1TrXicdQ8eyzMx1N9uX9Xyz+Zswlm3+NOnvYP3rrOy7pDFStVh4/yJOoc97rfdpNVAZfFianlwaj+XmSC5IZ+D95bzzfhUswivv11cc3yMdjWg/4n3nskdBkkpijo8oaQi5nt/v4BpFZdBxoAwyMTTNWY96ax9UQva5IIXE0XW299P0u6R0B19zvDj2IMFeZCmasuCsTRfL6FsQ1dLN+MBY7oyZQZ+Vb1/4mbfNfgpHLU9u0ERxJjUL9yjG0XLTkG+TKjbkVzpIYfUi89PEIBaexWso1XJzyqMQxukX113CXwpZuFkUkugtCCCfKqWxfYPr0Rsz+AWpEh7dReWHYZVtttVz3mdVnyfKulGqaZR0ZCNKBeGILqo+PaVnIVxtTbx4Wh2NoDnWkAJeFsZ8XRIlh/rvWC+D9ZaSknLrLusjnGPDmf9n3lV9Pgyx+/oI16nZf29a0pk7pTntA6k+tm1vRMs6tvdhwh8xCzTPTqAMGcepnerd5ZGXTpLE9nSoAnnVFRb1qmmWx7IKy3r1Smj9t2+afZaXmc/cXu+39JC1JhktQMIjoyLFcdk0p4x1uujYhu3hCDb138tbUnMEYr/M9ri9YsW0tGMXustsNsPOduUhiaqqElUdaU9AciLiUWSan6ca/GQ7WECZV/nivt1cjITnhlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJS/3H9D6OBsbaEefeXAAAAAElFTkSuQmCC" alt="IndiaQuotient Logo">
+        </div>
+    </div>
+
+</body>
+</html>
